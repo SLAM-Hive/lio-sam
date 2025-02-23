@@ -14,8 +14,8 @@
     <!--- Run Navsat -->
     <include file="$(find lio_sam)/launch/include/module_navsat.launch" />
 
-    <!-- - Run Rviz
-    <include file="$(find lio_sam)/launch/include/module_rviz.launch" /> -->
+    <!-- - Run Rviz -->
+    <!--<include file="$(find lio_sam)/launch/include/module_rviz.launch" /> -->
 
     <node pkg="rosbag" type="record" name="rosbag_record_diag"
        args="record -O traj /lio_sam/mapping/odometry"/> 
